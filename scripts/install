@@ -27,6 +27,7 @@ ynh_setup_source --dest_dir="$install_dir"
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
+dir=__DIR__
 ynh_config_add --template="configuration_sample.php" --destination="$install_dir/configuration.php"
 
 chown -R $app:www-data "$install_dir/configuration.php"
