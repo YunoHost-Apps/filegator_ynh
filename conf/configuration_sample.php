@@ -14,8 +14,8 @@ return [
         'app_version' => APP_VERSION,
         'language' => 'english',
         'logo' => 'https://filegator.io/filegator_logo.svg',
-        'upload_max_size' => 1000 * 1024 * 1024, // 1000MB
-        'upload_chunk_size' => 10 * 1024 * 1024, // 10MB
+        'upload_max_size' => 1000 * 1024 * 1024, // 100MB
+        'upload_chunk_size' => 10 * 1024 * 1024, // 1MB
         'upload_simultaneous' => 3,
         'default_archive_name' => 'archive.zip',
         'editable' => ['.txt', '.css', '.js', '.ts', '.html', '.php', '.json', '.md'],
@@ -33,7 +33,7 @@ return [
                 'monolog_handlers' => [
                     function () {
                         return new \Monolog\Handler\StreamHandler(
-                            '__INSTALL_DIR__/private/logs/app.log',
+                            __DIR__.'/private/logs/app.log',
                             \Monolog\Logger::DEBUG
                         );
                     },
@@ -45,7 +45,7 @@ return [
             'config' => [
                 'handler' => function () {
                     $save_path = null; // use default system path
-                    //$save_path = '__INSTALL_DIR__/private/sessions';
+                    //$save_path = __DIR__.'/private/sessions';
                     $handler = new \Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler($save_path);
 
                     return new \Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage([
@@ -65,7 +65,7 @@ return [
         'Filegator\Services\Tmpfs\TmpfsInterface' => [
             'handler' => '\Filegator\Services\Tmpfs\Adapters\Tmpfs',
             'config' => [
-                'path' => '__INSTALL_DIR__/private/tmp/',
+                'path' => __DIR__.'/private/tmp/',
                 'gc_probability_perc' => 10,
                 'gc_older_than' => 60 * 60 * 24 * 2, // 2 days
             ],
@@ -106,14 +106,14 @@ return [
         'Filegator\Services\Auth\AuthInterface' => [
             'handler' => '\Filegator\Services\Auth\Adapters\JsonFile',
             'config' => [
-                'file' => '__DATA_DIR__/private/users.json',
+                'file' => __DIR__.'/private/users.json',
             ],
         ],
         'Filegator\Services\Router\Router' => [
             'handler' => '\Filegator\Services\Router\Router',
             'config' => [
                 'query_param' => 'r',
-                'routes_file' => '__INSTALL_DIR__/backend/Controllers/routes.php',
+                'routes_file' => __DIR__.'/backend/Controllers/routes.php',
             ],
         ],
     ],
