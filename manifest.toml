@@ -59,6 +59,9 @@ ram.runtime = "50M"
     [resources.install_dir]
     group = "www-data:r-x"
 
+    [resources.data_dir]
+    subdirs = ["repository", "private"]
+
     [resources.permissions]
     main.url = "/"
 

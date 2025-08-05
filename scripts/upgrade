@@ -20,14 +20,14 @@ ynh_app_setting_set_default --key=php_post_max_size --value=1G
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="repository private configuration.php"
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="configuration.php"
 
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-#ynh_script_progression "Updating $app's configuration files..."
+ynh_script_progression "Updating $app's configuration files..."
 
-#ynh_config_add --template="configuration_sample.php" --destination="$install_dir/configuration.php"
+ynh_config_add --template="configuration_sample.php" --destination="$install_dir/configuration.php"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
