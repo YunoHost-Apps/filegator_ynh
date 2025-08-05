@@ -29,6 +29,8 @@ ynh_script_progression "Updating $app's configuration files..."
 
 ynh_config_add --template="configuration_sample.php" --destination="$install_dir/configuration.php"
 
+chown -R $app:www-data "$install_dir/configuration.php"
+
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
