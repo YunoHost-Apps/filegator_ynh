@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "filegator"
-name = "Filegator"
+name = "FileGator"
 description.en = "Powerful Multi-User File Manager"
 description.fr = "Puissant gestionnaire de fichiers multi-utilisateurs"
 
@@ -52,12 +52,14 @@ ram.runtime = "50M"
     url = "https://github.com/filegator/static/raw/master/builds/filegator_latest.zip"
     sha256 = "8c72f2bdc6bb483ff417962ace39ccac81f79335341a3d6eff1d976a713599e9"
 
-    autoupdate.strategy = "latest_github_tag"
+    #autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
     [resources.install_dir]
     group = "www-data:r-x"
+
+    [resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
