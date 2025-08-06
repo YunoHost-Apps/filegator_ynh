@@ -4,8 +4,8 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/filegator.png" width="32px" alt="Logo of Filegator">
-  Filegator, packaged for YunoHost
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/filegator.png" width="32px" alt="Logo of FileGator">
+  FileGator, packaged for YunoHost
 </h1>
 
 Powerful Multi-User File Manager
@@ -21,13 +21,13 @@ Powerful Multi-User File Manager
 
 
 ## Screenshots
-![Screenshot of Filegator](./doc/screenshots/example.jpg)
+![Screenshot of FileGator](./doc/screenshots/example.jpg)
 
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/filegator)](https://ci-apps.yunohost.org/ci/apps/filegator/)
 
-🛠️ Upstream Filegator repository: <https://github.com/filegator/filegator>
+🛠️ Upstream FileGator repository: <https://github.com/filegator/filegator>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/filegator_ynh/tree/testing).
 
