@@ -33,7 +33,7 @@ return [
                 'monolog_handlers' => [
                     function () {
                         return new \Monolog\Handler\StreamHandler(
-                            __DIR__.'/private/logs/app.log',
+                            '/var/log/__APP__/__APP__.log',
                             \Monolog\Logger::DEBUG
                         );
                     },
