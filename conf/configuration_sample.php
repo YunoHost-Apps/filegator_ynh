@@ -44,15 +44,11 @@ return [
             'handler' => '\Filegator\Services\Session\Adapters\SessionStorage',
             'config' => [
                 'handler' => function () {
-                    $save_path = null; // use default system path
-                    //$save_path = __DIR__.'/private/sessions';
-                    $handler = new \Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler($save_path);
+                    $handler = new \Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler(
+                            'mysql://__DB_USER__:__DB_PWD__@localhost:3306/__DB_NAME__'
+                            );
 
-                    return new \Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage([
-                            "cookie_samesite" => "Lax",
-                            "cookie_secure" => null,
-                            "cookie_httponly" => true,
-                        ], $handler);
+                    return new \Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage([], $handler);
                 },
             ],
         ],

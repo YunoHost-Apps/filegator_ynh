@@ -35,6 +35,13 @@ ynh_config_add --template="configuration_sample.php" --destination="$install_dir
 chown -R $app:www-data "$install_dir/configuration.php"
 
 #=================================================
+# CEAT THE MYSQL DATABASE
+#=================================================
+ynh_script_progression "Adding $app's configuration files..."
+
+ynh_mysql_db_shell < ../conf/sessions.sql
+
+#=================================================
 # SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
