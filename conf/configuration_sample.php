@@ -12,10 +12,10 @@ return [
     'frontend_config' => [
         'app_name' => 'FileGator',
         'app_version' => APP_VERSION,
-        'language' => 'english',
+        'language' => '__LANGUAGE__',
         'logo' => 'https://filegator.io/filegator_logo.svg',
-        'upload_max_size' => 1000 * 1024 * 1024, // 100MB
-        'upload_chunk_size' => 10 * 1024 * 1024, // 1MB
+        'upload_max_size' => 1000 * 1024 * 1024, // 1000MB
+        'upload_chunk_size' => 10 * 1024 * 1024, // 10MB
         'upload_simultaneous' => 3,
         'default_archive_name' => 'archive.zip',
         'editable' => ['.txt', '.css', '.js', '.ts', '.html', '.php', '.json', '.md'],
