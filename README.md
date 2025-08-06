@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   FileGator, packaged for YunoHost
 </h1>
 
-Powerful Multi-User File Manager
+Multi-User File Manager
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://filegator.io/)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://demo.filegator.io/)
@@ -21,7 +21,7 @@ Powerful Multi-User File Manager
 
 
 ## Screenshots
-![Screenshot of FileGator](./doc/screenshots/example.jpg)
+![Screenshot of FileGator](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
