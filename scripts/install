@@ -14,6 +14,8 @@ source /usr/share/yunohost/helpers
 ynh_app_setting_set --key=php_upload_max_filesize --value=1G
 ynh_app_setting_set --key=php_post_max_size --value=1G
 
+secret_key=$(ynh_string_random)
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================

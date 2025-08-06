@@ -74,7 +74,7 @@ return [
             'handler' => '\Filegator\Services\Security\Security',
             'config' => [
                 'csrf_protection' => true,
-                'csrf_key' => "123456", // randomize this
+                'csrf_key' => "__SECRET_KEY__", // randomize this
                 'ip_allowlist' => [],
                 'ip_denylist' => [],
                 'allow_insecure_overlays' => false,
