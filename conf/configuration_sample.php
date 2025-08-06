@@ -12,10 +12,10 @@ return [
     'frontend_config' => [
         'app_name' => 'FileGator',
         'app_version' => APP_VERSION,
-        'language' => 'english',
+        'language' => '__LANGUAGE__',
         'logo' => 'https://filegator.io/filegator_logo.svg',
-        'upload_max_size' => 1000 * 1024 * 1024, // 100MB
-        'upload_chunk_size' => 10 * 1024 * 1024, // 1MB
+        'upload_max_size' => 1000 * 1024 * 1024, // 1000MB
+        'upload_chunk_size' => 10 * 1024 * 1024, // 10MB
         'upload_simultaneous' => 3,
         'default_archive_name' => 'archive.zip',
         'editable' => ['.txt', '.css', '.js', '.ts', '.html', '.php', '.json', '.md'],
@@ -33,7 +33,7 @@ return [
                 'monolog_handlers' => [
                     function () {
                         return new \Monolog\Handler\StreamHandler(
-                            __DIR__.'/private/logs/app.log',
+                            '/var/log/__APP__/__APP__.log',
                             \Monolog\Logger::DEBUG
                         );
                     },
@@ -74,7 +74,7 @@ return [
             'handler' => '\Filegator\Services\Security\Security',
             'config' => [
                 'csrf_protection' => true,
-                'csrf_key' => "123456", // randomize this
+                'csrf_key' => "__SECRET_KEY__", // randomize this
                 'ip_allowlist' => [],
                 'ip_denylist' => [],
                 'allow_insecure_overlays' => false,

@@ -1,0 +1,1 @@
+Se connecter avec les identifiants par défaut `admin/admin123`.
