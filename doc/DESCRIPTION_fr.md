@@ -2,11 +2,10 @@ FileGator est une application web de gestion de fichiers et de dossiers. Vous po
 
 ### Caractéristiques
 
-    Adaptateurs de stockage multiples (Local, FTP, Amazon S3, Dropbox, DO Spaces, Azure Blob et bien d'autres via Flysystem)
-    Adaptateurs d'authentification multiples avec rôles et permissions (Stocker les utilisateurs dans un fichier json, une base de données ou utiliser WordPress)
-    Adaptateurs de session multiples (Native File, Pdo, Redis, MongoDB, Memcached et autres via Symfony)
-    Front-end à page unique
-    Téléchargements groupés
-    Prise en charge des téléchargements zip et en masse
-    Aucune base de données n'est requise
- 
+- Peut s'interfacer avec de multiples technos de stockage (Local, FTP, Amazon S3, Dropbox, DO Spaces, Azure Blob et bien d'autres via Flysystem)
+- Rôles et permissions (Stocker les utilisateurs dans un fichier json, une base de données ou utiliser WordPress)
+- Plusieurs technos de session supportées (Native File, Pdo, Redis, MongoDB, Memcached et autres via Symfony)
+- Front-end à page unique
+- Téléchargements groupés
+- Prise en charge des téléchargements zip et en masse
+- Aucune base de données n'est requise
