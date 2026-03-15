@@ -38,7 +38,6 @@ ynh_restore "/etc/logrotate.d/$app"
 ynh_restore "/var/log/$app/"
 chown -R $app:www-data "/var/log/$app/"
 chmod 750 "/var/log/$app/"
-chmod 660 "/var/log/$app/*"
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
