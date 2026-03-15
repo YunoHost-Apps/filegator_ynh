@@ -7,7 +7,7 @@ name = "FileGator"
 description.en = "Multi-User File Manager"
 description.fr = "Gestionnaire de fichiers multi-utilisateurs"
 
-version = "7.13.0~ynh2"
+version = "7.13.0~ynh3"
 
 maintainers = ["eric_G"]
 
@@ -20,7 +20,7 @@ code = "https://github.com/filegator/filegator"
 fund = "https://www.patreon.com/alcalbg"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -57,7 +57,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://github.com/filegator/static/raw/master/builds/filegator_latest.zip"
-    sha256 = "8c72f2bdc6bb483ff417962ace39ccac81f79335341a3d6eff1d976a713599e9"
+    sha256 = "0bd3172d972f35c6327a864635356e440a67c991367b63d905e3647f15b2d887"
 
     [resources.system_user]
 
@@ -70,4 +70,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php8.3-zip, php8.3-mbstring, php8.3-dom, php8.3-xml"
+    packages = "php8.4-zip, php8.4-mbstring, php8.4-dom, php8.4-xml"
