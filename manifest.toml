@@ -60,7 +60,8 @@ ram.runtime = "50M"
     sha256 = "0bd3172d972f35c6327a864635356e440a67c991367b63d905e3647f15b2d887"
     
     autoupdate.strategy = "latest_github_tag"
-
+    autoupdate.asset = "filegator_v%s.zip"
+    
     [resources.system_user]
 
     [resources.install_dir]
