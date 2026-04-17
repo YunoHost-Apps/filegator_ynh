@@ -7,7 +7,7 @@ name = "FileGator"
 description.en = "Multi-User File Manager"
 description.fr = "Gestionnaire de fichiers multi-utilisateurs"
 
-version = "7.13.0~ynh3"
+version = "7.13.5~ynh3"
 
 maintainers = ["eric_G"]
 
