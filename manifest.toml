@@ -57,7 +57,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://github.com/filegator/static/raw/master/builds/filegator_latest.zip"
-    sha256 = "0bd3172d972f35c6327a864635356e440a67c991367b63d905e3647f15b2d887"
+    sha256 = "c630cba23d0ffaf97a021b682b86f6596f0fda0e7ceb377992792848a6581951"
 
     [resources.system_user]
 
